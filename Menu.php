@@ -1,0 +1,508 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en">
+<head>
+<meta name="viewport" content="width"=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Rainbow | MENU </title>
+<link rel="stylesheet" type="text/css" href="index.css" />
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+<link rel="stylesheet" type="text/css" href="css/vars.css"/>
+<link rel="stylesheet" type="text/css" href="css/vars.css"/>
+<link rel="stylesheet" type="text/css" href="css/nar.css"/>
+<link rel="stylesheet" type="text/css" href="clock.css/">
+<link rel="stylesheet" type="text/css" href="Navigation.css/">
+<link rel="stylesheet" type="text/css" href="k.css/">
+<link rel="stylesheet" type="text/css" href="social.css/>
+<script src="js/clock.js"></script>
+<script src="ki"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="script.js"></script>
+
+<link rel="icon" href="logo.jpg">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+/* Button used to open the chat form - fixed at the bottom of the page */
+.open-button {
+  background-color: blue;
+  color: white;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 100px;
+  font-size:30px;
+  border-radius:50%;
+  height:50px
+}
+
+/* The popup chat - hidden by default */
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+ 
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 3px;
+  background-color: #999;
+  box-shadow:3px 5px 7px #666666;
+  border:1px solid black;
+  border-radius:2%;
+}
+
+/* Full-width textarea */
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 200px;
+}
+
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+  background-color: white;
+  font-size:20px;
+  color:black;
+  outline: none;
+}
+
+/* Set a style for the submit/send button */
+.form-container .btn {
+  background-color: blue;
+  color: white;
+  padding: 16px 20px;
+  
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+body {margin:0;height:1000px;}
+
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 25px;
+   box-shadow:3px 5px 7px #666666;
+  -webkit-box-shadow:8px 9px 12px black;
+  border:1px solid black;
+}
+
+.icon-bar a:hover {
+  background-color: #000;
+  width:65px;
+}
+
+.facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.google {
+  background: #dd4b39;
+  color: white;
+}
+
+.linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.content {
+  margin-left: 75px;
+  font-size: 30px;
+}
+.dropbtn {
+  background-color: Blue;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: red;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown1{
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+#ob{
+	padding-top:1px ;
+	border:1px solid blue;
+	height:411px;
+	background-color:black;
+}
+#oa{
+	border:1px solid black;
+	margin-top:1px;
+	height:411px;
+	 background-image: url("imgd.gif");
+  background-color: #cccccc;
+}
+#kt{
+	text-shadow:3px 5px 2px white;
+	box-shadow:3px 5px 7px white;
+	border-radius:50%;
+	border:1px solid blue;
+	background-color:blue;
+	font-size:25px;
+	height:100px;
+}
+#kt1{
+	text-shadow:3px 5px 2px #000;
+	box-shadow:3px 5px 7px black;
+	border-radius:50%;
+	border:1px solid blue;
+	background-color:blue;
+	font-size:25px;
+	height:80px;
+	background-color:red;
+}
+#kt12{
+	text-shadow:3px 5px 2px white;
+	box-shadow:3px 5px 7px white;
+	border-radius:50%;
+	border:1px solid blue;
+	background-color:blue;
+	font-size:25px;
+	height:100px;
+	background-color:red;
+}
+#kt2{
+	text-shadow:3px 5px 2px #000;
+	box-shadow:3px 5px 7px white;
+	border-radius:50%;
+	border:1px solid blue;
+	background-color:blue;
+	font-size:25px;
+	height:50px;
+	background-color:red;
+}
+a:hover{
+	text-decoration:none;
+}
+.nepali{
+	 background-image: url("new.gif");
+	 text-shadow:3px 5px 2px red;
+	box-shadow:3px 5px 7px yellow;
+	 height:380px;
+	 width:420px;
+	margin-top:15px;
+	border-radius:30px;
+}
+
+</style>
+
+
+</head>
+
+<body>
+<div class="icon-bar">
+  <a href="https://www.facebook.com/optimus9999" class="facebook"><i class="fa fa-facebook"></i></a> 
+  <a href="https://twitter.com/login" class="twitter"><i class="fa fa-twitter"></i></a> 
+  <a href="https://google.com" class="google"><i class="fa fa-google"></i></a> 
+  <a href="www.youtube.com" class="youtube"><i class="fa fa-youtube"></i></a> 
+  <a href="Menu.php" class="linkedin"><i class="<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"><br><div id="t">MENU</div></i>
+  </a></i></a>
+</div>
+
+
+<div id="header">
+	<a href="Menu.php">
+<div class="loader"><p class="text1"><font color="white"><b>R</b></font></p></div></a>
+<div class="col-md-12" id="row">
+<div class="col-md-2" id="logo">	<div id="logo2"><div id="logo1"<center><img src="Logo.jpg" height="190px"/><center>WELCOME</center></div></div></div>
+<div class="col-md-8" id="banner"><center><hr><h1 class="text"><b>Rainbow Stamp And Flex Printing Pvt.Ltd</h1><I><h3><font color="white">Birtamode Jhapa</font></h3><i></b></center><hr></div>
+<div class="col-md-2" id="time"><center><div id="time1">
+<img src="nishan.jpg" id="hellow" height="130px" width:"130px">Nishan Katuwal</div><h5><u>Nishan Katuwal<br></u>Graphic Designers</h5></center></div>
+<center><div id="yo">....<iframe scrolling="no" frameborder="no" clocktype="html5" style="overflow:hidden;border:0;margin:0;padding:0;width:120px;height:40px;"src="https://www.clocklink.com/html5embed.php?clock=004&timezone=Nepal_Kathmandu&color=white&size=120&Title=&Message=&Target=&From=2019,1,1,0,0,0&Color=white"></iframe>....</div></center>
+</div>
+</div>
+</div>
+
+    
+
+<div id="menu">
+    	<marquee><h3><font color="yellow"><b>Rainbow Stamp And Flex Printing Pvt.Ltd / .Purano Bhadrapur Road Oposite Side of Safal Drug Dristributors Pvt.Ltd {Contact : 023-545383}</b></h3></font></marquee>
+</div>
+<div id="nar">
+<nav> <a href="#"><i class="fa fa-bars fa-2x"></i></a>
+  <ul><li></li>
+    <li> <a href="index.php"><b>HOME</b></a> </li>
+    <li> <a href="SERVICES.php"><b>SERVICES</b></a>
+	 <ul>
+          <li><a href='stamp.php'><span>Stamp Design</span></a></li>
+          <li><a href='flex.php'><span>Flex Printing</span></a></li>
+          <li><a href='T-short.php'><span>T-short Design</span></a></li>
+          <li><a href='Graphic.php'><span>Graphic Design</span></a></li>
+          <li><a href='visiting.php'>visiting Card Design</span></a></li>
+          <li class='last'><a href='Web.php'><span>Website Design</span></a></li>
+
+        </ul>
+	</li>
+    <li> <a href="new.php"><b>EVENTS</b></a> </li>
+    <li> <a href="contact.php"><b>CONTACT</b></a> </li>
+	<li> <a href="Gallery.php"><b>GALLERY</b></a> </li>
+    <li></li>  
+</ul>
+</nav>
+
+</div>
+    
+<div id="body">
+
+
+		<div class="col-md-12" id="i">
+			<div class="col-md-5" id="ob">		<div class="col-md-12" id="kt"><div id="kt1"><center><b>RESPONSIVE<br>MENU</b></center></div> <h1 id="kt12"></h1> <h1 id="kt12"><h1 id="kt2"></h1></div><br>
+
+<center><div class="dropdown1">
+ <a href="index.php"> <button onclick="myFunction()" class="dropbtn"><font color="blue">.......</font><b>HOME</b><font color="blue">.......</font></button></a>
+</div></center>
+<center><div class="dropdown">
+ <a href="contact.php"> <button onclick="myFunction()" class="dropbtn"><font color="blue">............</font><b>CONTACT</b><font color="blue">............</font></button></a>
+</div></center>
+<center><div class="dropdown1">
+ <a href="new.php"> <button onclick="myFunction()" class="dropbtn"><font color="blue">.....</font><b>EVENTS</b><font color="blue">......</font></button></a>
+</div></center>
+<center><div class="dropdown1">
+  <button onclick="myFunction()" class="dropbtn"><font color="blue">............</font></b>SERVICES</b><font color="blue">............</font></button></a>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="stamp.php">Stamp Design</a>
+    <a href="flex.php">Flex Printing</a>
+    <a href="T-short.php">T-short Design</a>
+	<a href="Graphic.php">Graphic Design</a>
+    <a href="visiting.php">Visiting Card Design</a>
+    <a href="web.php">Website Design</a>
+  </div>
+</div></center>
+<center><div class="dropdown1">
+  <a href="Gallery.php"><button onclick="myFunction()" class="dropbtn"><font color="blue">.....</font></b>GALLERY</b><font color="blue">....</font></button></a>
+</div></center>
+
+</div>
+			<div class="col-md-7" id="oa">
+							<center><div class="nepali"><u><B>WELCOME TO RAINBOW STAMP PVT.LTD</B></u></div></center>
+				</div>
+		</div>
+	
+				
+</div>
+
+<div id="photo">
+
+			<div class="col-md-12" id="phot"><center>
+			<div class="col-md-4" id="whiteBox"> <div class="whiteBox1">
+                                         <img src="nishan.jpg" height="200px" width="200px">
+
+                                        <p><p></p></p></div>
+                                     	<center>
+                                        <h3>Nishan Katuwal</h3>
+                                     <font color="red"> <b> Graphic Designer</b></font> <center><a href="https://www.facebook.com/optimus9999"> <button class="btn">Read More...</button></a></center>                                      
+  								</div>
+			<div class="col-md-4" id="whiteBox"><div class="whiteBox2">
+                                         <img src="web.jpg" height="300px" width="325px"></div></div>
+			<div class="col-md-4" id="whiteBox"><div class="whiteBox1">
+                                         <img src="antu.jpg" height="200px" width="200px">
+
+                                        <p><p></p></p></div>
+                                     	<center>
+                                        <h3>Hem Narayan Rajbanshi</h3>
+                                      <font color="red"> <b>Web Designer</b></font><center><a href="https://www.facebook.com/suraj.nepal.3781"> <button class="btn">Read More...</button></a></center>               
+  								</div>	</center>	
+			</div>
+        
+
+
+
+</div>
+
+
+
+
+
+    
+    <div id="footer">
+    
+   <div class="col-md-12" id="hel">
+   <div class="col-md-8" id="foot">
+    <div class="toot"><font><b><i>
+   &nbsp;&nbsp;&nbsp;<a href="index.php">Home |</a><a href="SERVICES.php"> Services |</a><a href="new.php"> News & Events |</a><a href="contact.php"> Contact |</a></a><a href="Gallery.php"> Gallery |</a> </i></b></font></div><center><h1 id="text"><font color="white">?</h1></font></center>
+      	<h3><center><font color="white">Contact No. +977-1-4246974;<br> Gm@il:rambowstamp@gmail.com <br>
+2019 © Rambow Stamp And Flex Printing Pvt. Ltd.  All rights reserved.<br>
+!!!</font></h3></center></div>
+<div class="col-md-4" id="Good"><center><img src="woldlink.png" width="400" height="200" /><br>  <h4><font color="red"> Copyright©2019 | www.rambowstamp.com.np<br>Design & Devloper By Hem Narayan Rajbanshi</font></h4></center></div>
+
+<center>
+<button onclick="topFunction()" id="myBtn1" title="Go to top"><font color=black>Go to Top</font></button>
+</center>
+                                      
+</div>
+<button class="open-button" onclick="openForm()"><font color="yellow">Chat</button>
+
+<div class="chat-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1><font color="blue"><h1 id="re"><b><center>Sent Your Message</center> </b></h1></font></h1>
+
+    <font color="silver"><textarea placeholder="Type message.." name="msg" required></textarea></font>
+
+    <button type="submit" class="btn"><b class="ri">Send</b></button>
+    <button type="button" class="btn cancel" onclick="closeForm()"><font color="blue"><b class="ro">Close</b></font></button>
+  </form>
+</div>
+
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("myBtn1").style.display = "block";
+  } else {
+    document.getElementById("myBtn1").style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+</body>
+</html>
